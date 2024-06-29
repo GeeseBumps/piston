@@ -12,3 +12,9 @@ services:
         tmpfs:
             - /piston/jobs:exec,uid=1000,gid=1000,mode=711
             - /tmp:exec
+        networks:
+            - comaz-integrated
+
+networks:
+  comaz-integrated:
+    external: true
