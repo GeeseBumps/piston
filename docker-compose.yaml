@@ -13,8 +13,9 @@ services:
             - /piston/jobs:exec,uid=1000,gid=1000,mode=711
             - /tmp:exec
         networks:
-            - comaz-integrated
+            - comaz_integrated
+
 
 networks:
-  comaz-integrated:
+  comaz_integrated:
     external: true
